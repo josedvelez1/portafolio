@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +15,11 @@
     
 <div class="wrapper">
     <header>
-        <div class="vector1">
-            <img src="./assets/imagenes/Rectangle 33.svg" alt="rectangle background">
+        <div>
+            <img class="vector1" src="./assets/imagenes/Rectangle 34.svg" alt="vector1">
+        </div>
+        <div>
+            <img class="vector1-1" src="./assets/imagenes/Rectangle 33-1.svg" alt="vector1-1">
         </div>
         <nav class="navbar">
             <input type="checkbox" id="menu-hamburguesa">
@@ -21,22 +27,22 @@
                 <img src="./assets/imagenes/menu 1.svg" alt="icono menu hamburguesa">
             </label>
             <ul class="menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">Acerca de mí</a></li>
-                <li><a href="">Experiencia</a></li>
-                <li><a href="">Mis habilidades</a></li>
-                <li><a href="">Mi portafolio</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#home-id">Home</a></li>
+                <li><a href="#about-id">Acerca de mí</a></li>
+                <li><a href="#experience-id">Experiencia</a></li>
+                <li><a href="#skills-id">Mis habilidades</a></li>
+                <li><a href="#portfolio-id">Mi portafolio</a></li>
+                <li><a href="#contact-id">Contacto</a></li>
             </ul>
         </nav>
 
     </header>
 
-    <h1> José Daniel Vélez M.</h1>
-    <main class="main">
+    <h1> José D. Vélez M.</h1>
+    <main class="main" id="home-id">
         <div class="info-main">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum!</p>
-            <p><span class="años">+5 años</span> de experiencia</p>
+            <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum!</p>
+            <p class="span"><span class="años">+5 años</span> de experiencia</p>
             <ul class="icons-main">
                 <li><svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_57_826)">
@@ -63,11 +69,10 @@
 </div>
 
 
-<div class="about">
-    <h2>Acerca de mí</h2>
+<div class="about" id="about-id">
+    <h2 class="about-tittle">Acerca de mí</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus nam minus necessitatibus doloremque, harum eveniet? Sunt autem maxime, architecto, veritatis et provident culpa quidem neque consequuntur modi, quae voluptatum.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde atque accusantium corrupti. Vel molestias quo, eaque aspernatur, eligendi non tenetur quae dolorem velit, earum debitis autem. Officia esse sapiente ab?</p>
-
+    
     <div class="icons-aboutme">
         <div><img src="./assets/imagenes/image 9.jpg" alt="imagen UVM"></div>
         <div class="empty"> </div>
@@ -81,8 +86,8 @@
     </div>
 </div>
 
-<div class="experience">
-    <h2>Experiencia</h2>
+<div class="experience" id="experience-id">
+    <h2 class="experience-tittle">Experiencia</h2>
     <div>
         <img class="vector3" src="./assets/imagenes/Group 35.svg" alt="vector 3">
     </div>
@@ -123,9 +128,14 @@
     </div>
 </div>
 
-<div class="skills">
+<div class="skills" id="skills-id">
     <h2 class="skills-tittle">Mis habilidades</h2>
-    <img class="vector4" src="./assets/imagenes/Rectangle 34-1.svg" alt="vector 4">
+    <div class="vector4">
+        <img src="./assets/imagenes/Rectangle 34-1.svg" alt="vector 4">
+    </div>
+    <div class="vector4-4">
+        <img src="./assets/imagenes/Rectangle 33.svg" alt="vector 4-4">
+    </div>
     <div class="skills-grid">
         <div>
             <p class="number-percentage">95%</p>
@@ -160,31 +170,41 @@
     </div>
 </div> 
 
-<div class="myportfolio">
-    <h2>Mi portafolio</h2>
-    <div>
-        <div class="rectangle-yellow1">
-
-            <img class="collage" src="./assets/imagenes/image 9-1.jpg" alt="collage1">
-            <p class="text-collage">Ecommerce Skincare</p>
+<div class="myportfolio" id="portfolio-id">
+    <h2 class="portfolio-tittle">Mi portafolio</h2>
+    <div class="portfolio">
+        <div class="portfolio-section1">
+            <div>
+                <img class="portfolio-img" src="./assets/imagenes/image 9-1.jpg" alt="collage1">
+            </div>
+            <div>
+                <p>Ecommerce Skincare</p>
+            </div>
         </div>
-
-        <div class="rectangle-grey1">
-
-            <img class="collage" src="./assets/imagenes/image 10.jpg" alt="collage2">
-            <p class="text-collage">Training at home app</p>
+        <div class="portfolio-section2">
+            <div>
+                <img class="portfolio-img2" src="./assets/imagenes/image 10.jpg" alt="collage2">
+            </div>
+            <div>
+                <p class="portfolio-text2">Training at home app</p>
+            </div>
         </div>
-
-        <div class="rectangle-yellow2">
-
-            <img class="collage" src="./assets/imagenes/image 11.jpg" alt="collage3">
-            <p class="text-collage">Personal Writer</p>
+        <div class="portfolio-section3">
+            <div >
+                <img class="portfolio-img" src="./assets/imagenes/image 11.jpg" alt="collage3">
+            </div>
+            <div>
+                <p>Personal Writer</p>
+            </div>
         </div>
     </div>
+    <div class="rectangle-yellow1"> </div>
+    <div class="rectangle-grey"> </div>
+    <div class="rectangle-yellow2"> </div>
 </div>
 
-<div class="contact">
-    <h2>Contacto</h2>
+<div class="contact" id="contact-id">
+    <h2 class="contact-tittle">Contacto</h2>
     <div class="phone">
         <img src="./assets/imagenes/phone 3.svg" alt="phone logo">
         <p class="text-contact">Número celular</p>

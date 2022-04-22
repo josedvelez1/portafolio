@@ -31,6 +31,13 @@ html{
 .vector1 {
     position: absolute;
     right: 0;
+    height: 437px;
+}
+
+.vector1-1{
+    position: absolute;
+    right: 0;
+    visibility: hidden;
 }
 
 input#menu-hamburguesa {
@@ -44,6 +51,9 @@ input#menu-hamburguesa ~ ul {
     top: 93px;
     right: 100%;
     transition: all 300ms linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 input#menu-hamburguesa:checked ~ ul {
@@ -79,15 +89,25 @@ h1 {
     color: #fff;
     position: relative;
     z-index: 3;
-    margin-left: 5rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
 }
 
-.info-main p{
+.info-main {
+    z-index: 2;
+}
+
+.main-text{
     color: #fff;
     font-size: 32px;
     z-index: 2;
     position: relative;
     margin-bottom: 3rem;
+}
+
+.span{
+    font-size: 25px;
+    color:#fff;
 }
 
 .años{
@@ -96,10 +116,10 @@ h1 {
 
 .main img {
     position: relative;
-    width: 450px;
-    height: 450px;
     margin-bottom: 5rem;
-    right: 1rem;
+    width: 300px;
+    height: 300px;
+    right: 2rem;
     z-index: 1;
 }
 
@@ -134,8 +154,7 @@ h2 {
 .about p {
     text-align: center;
     color: #fff;
-    margin-left: 25%;
-    margin-right: 25%;
+    padding: 1rem;
 }
 
 .icons-aboutme {
@@ -167,25 +186,26 @@ h2 {
     position: relative;
 }
 
-h2 {
+.experience-tittle {
     font-size: 32px;
     text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .experience-grid {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 15%;
+    margin-right: 24%;
+    grid-column-gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 .vector3 {
     position: absolute;
-    right: 16rem;
+    right: 7rem;
     top: 30%;
-
 }
 
 .experience-subsection {
@@ -194,7 +214,7 @@ h2 {
 }
 
 .skills {
-    background-color: #242635;
+    background-color: #1F1D2C;
     color: #fff;
     width: 100%;
     height: 100%;
@@ -204,11 +224,12 @@ h2 {
 
 .skills-tittle {
     font-size: 32px;
-    text-align: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    padding-right: 1rem;
     position: relative;
-    margin-right: 24rem;
+    width: 100%;
+    z-index: 3;
 }
 
 .skills-grid {
@@ -216,6 +237,9 @@ h2 {
     grid-template-columns: auto auto;
     padding-bottom: 3rem;
     position: relative;
+    column-gap: 6rem;
+    row-gap: 1rem;
+    margin-left: 4rem;
 }
 
 .number-percentage {
@@ -234,66 +258,102 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+}
+
+.vector4-4 {
+    position: absolute;
+    visibility: hidden;
+    left: 0;
+    top: 0;
 }
 
 .myportfolio {
     background-color: #1F1D2C;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.portfolio-tittle {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.portfolio {
     color: #fff;
     position: relative;
+    padding: 1rem;
+    font-weight: 600;
+    z-index: 3;
+}
+
+.portfolio-img {
+    width: 250px;
+    height: 200px;
 }
 
 .rectangle-yellow1 {
     background-color: #f1a600;
-    width: 40vw;
-    height: 22vh;
-    position: relative;
-    margin-left: 7rem;
+    width: 270px;
+    height: 200px;
+    position: absolute;
+    margin-left: 0.5rem;
     z-index: 1;
+    margin-top: 9rem;
 }
 
-.collage {
-    z-index: 2;
-    width: 37vw;
-    height: 22vh;
-    margin-left: 1rem;
-    margin-top: 1rem;
+.portfolio-img2 {
+    width: 250px;
+    height: 200px;
+    margin-left: 16rem;
 }
 
-.text-collage {
-    font-size: 18px;
-    font-weight: 400;
-    padding-top: 1rem;
+.portfolio-text2 {
+    margin-left: 17rem;
 }
 
-.rectangle-grey1 {
+.rectangle-grey {
     background-color: #242635;
-    width: 40vw;
-    height: 22vh;
-    position: relative;
+    width: 270px;
+    height: 200px;
+    position: absolute;
     z-index: 1;
-    margin-left: 49%;
-    top: 1rem;
+    top: 23.5rem;
+    margin-left: 16.5rem;
 }
 
 .rectangle-yellow2 {
     background-color: #f1a600;
-    width: 40vw;
-    height: 22vh;
-    position: relative;
-    margin-left: 8rem;
+    width: 267px;
+    height: 200px;
+    position: absolute;
+    margin-left: 0.5rem;
     z-index: 1;
-    top: 5rem;
+    top: 38rem;
 }
+
 
 .contact {
     background-color: #242635;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     color: #fff;
 }
+
+.contact-tittle {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    padding-top: 1rem;
+    margin-bottom: 3rem;
+}
+
 
 .phone {
     text-align: center;
@@ -303,6 +363,8 @@ h2 {
 .email {
     text-align: center;
     margin-left: 23%;
+    position: relative;
+    bottom: 3rem;
 }
 
 .text-contact {
@@ -310,7 +372,7 @@ h2 {
     font-weight: 600;
 }
 
-@media ( min-width: 600px ){
+@media (min-width: 600px){
     label{
         display: none;
     }
@@ -329,4 +391,116 @@ h2 {
         font-weight: 600;
     }
 
+    .menu { 
+        display: flex;
+        width: 70%;
+        justify-content: space-around; 
+    }
+
+    .vector1{
+        visibility: hidden;
+    }
+
+    .vector1-1 {
+        position: absolute;
+        right: 0;
+        visibility: visible;
+        top: 0;
+    }
+
+    .main img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .about-tittle {
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .about p {
+        text-align: center;
+        color: #fff;
+        padding: 1rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .experience-tittle {
+        font-size: 50px;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .vector3 {
+        position: absolute;
+        right: 25rem;
+        top: 27%;
+    }
+
+    .experience-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-left: 30%;
+        margin-right: 24%;
+        grid-column-gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    
+    .skills-tittle {
+        font-size: 50px;
+        padding-right: 38rem; 
+    }
+    
+    .portfolio-tittle {
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+    
+    .vector4 {
+        visibility: hidden;
+    }
+
+    .vector4-4 {
+        visibility: visible;
+        top: 0;
+        left: 0;
+    }
+
+    .portfolio-section1 {
+        margin-left: 24.5%;
+    }
+
+    .rectangle-yellow1 {
+        top: 2rem;
+        margin-left: 24%;
+    }
+
+    .portfolio-section2 {
+        margin-left: 30%;
+    }
+
+    .rectangle-grey {
+        top: 24.5rem;
+        margin-left: 47%;
+    }
+
+    .portfolio-section3 {
+        margin-left: 24.5%;
+    }
+    
+    .rectangle-yellow2 {
+        margin-top: 1rem;
+        margin-left: 24%;
+    }
+
+    .contact-tittle {
+        font-size: 50px;
+        font-weight: 600;
+    }
 }
